@@ -1,0 +1,28 @@
+name: Data Source
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 16 * * *'
+
+jobs:
+  api-test:
+    runs-on: ubuntu-latest
+    if: github.repository == 'xyperia/fetch-json-test'
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Fetch Data to File
+      uses: gautemo/fetch-api-data-action@1.1.0
+      with:
+        url: 'https://data.covid19.go.id/public/api/update.json'
+        file: 'src/api/backupData.json'
+    - name: Commit file to repo
+      continue-on-error: true
+      run: |
+        git status
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "GitHub Action, daily backup of API data" -a
+        git push https://xyperia:${{ secrets.MY_GITHUB_TOKEN }}@github.com/xyperia/fetch-json-test.git
