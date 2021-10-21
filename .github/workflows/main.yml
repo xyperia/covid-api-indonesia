@@ -24,5 +24,6 @@ jobs:
         git status
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git add .
         git commit -m "GitHub Action, daily backup of API data" -a
         git push https://xyperia:${{ secrets.MY_GITHUB_TOKEN }}@github.com/xyperia/fetch-json-test.git
