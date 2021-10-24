@@ -9,7 +9,7 @@ on:
 jobs:
   api-test:
     runs-on: ubuntu-latest
-    if: github.repository == 'xyperia/fetch-json-test'
+    if: github.repository == 'xyperia/covid-api-indonesia'
 
     steps:
     - uses: actions/checkout@v2
@@ -17,7 +17,7 @@ jobs:
       uses: gautemo/fetch-api-data-action@1.1.0
       with:
         url: 'https://data.covid19.go.id/public/api/update.json'
-        file: 'src/api/backupData.json'
+        file: 'api/covid-id.json'
     - name: Commit file to repo
       continue-on-error: true
       run: |
@@ -25,5 +25,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit -m "GitHub Action, daily backup of API data" -a
-        git push https://xyperia:${{ secrets.MY_GITHUB_TOKEN }}@github.com/xyperia/fetch-json-test.git
+        git commit -m "Fetch data" -a
+        git push https://xyperia:${{ secrets.MY_GITHUB_TOKEN }}@github.com/xyperia/covid-api-indonesia.git
