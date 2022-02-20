@@ -1,19 +1,19 @@
 {
   "data": {
     "id": 1,
-    "jumlah_odp": 36710,
+    "jumlah_odp": 24900,
     "jumlah_pdp": 0,
-    "total_spesimen": 80569140,
-    "total_spesimen_negatif": 69150082
+    "total_spesimen": 81003675,
+    "total_spesimen_negatif": 69487371
   },
   "update": {
     "penambahan": {
-      "jumlah_positif": 59384,
-      "jumlah_meninggal": 158,
-      "jumlah_sembuh": 34699,
-      "jumlah_dirawat": 24527,
-      "tanggal": "2022-02-19",
-      "created": "2022-02-19 18:36:00"
+      "jumlah_positif": 48484,
+      "jumlah_meninggal": 163,
+      "jumlah_sembuh": 32873,
+      "jumlah_dirawat": 15448,
+      "tanggal": "2022-02-20",
+      "created": "2022-02-20 17:44:21"
     },
     "harian": [
       {
@@ -20895,13 +20895,42 @@
         "jumlah_dirawat_kum": {
           "value": 520910
         }
+      },
+      {
+        "key_as_string": "2022-02-20T00:00:00.000Z",
+        "key": 1645315200000,
+        "doc_count": 1,
+        "jumlah_meninggal": {
+          "value": 163
+        },
+        "jumlah_sembuh": {
+          "value": 32873
+        },
+        "jumlah_positif": {
+          "value": 48484
+        },
+        "jumlah_dirawat": {
+          "value": 15448
+        },
+        "jumlah_positif_kum": {
+          "value": 5197505
+        },
+        "jumlah_sembuh_kum": {
+          "value": 4514782
+        },
+        "jumlah_meninggal_kum": {
+          "value": 146365
+        },
+        "jumlah_dirawat_kum": {
+          "value": 536358
+        }
       }
     ],
     "total": {
-      "jumlah_positif": 5149021,
-      "jumlah_dirawat": 520910,
-      "jumlah_sembuh": 4481909,
-      "jumlah_meninggal": 146202
+      "jumlah_positif": 5197505,
+      "jumlah_dirawat": 536358,
+      "jumlah_sembuh": 4514782,
+      "jumlah_meninggal": 146365
     }
   }
 }
