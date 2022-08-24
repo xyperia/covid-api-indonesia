@@ -1,19 +1,19 @@
 {
   "data": {
     "id": 1,
-    "jumlah_odp": 6793,
+    "jumlah_odp": 6687,
     "jumlah_pdp": 0,
-    "total_spesimen": 106033887,
-    "total_spesimen_negatif": 92247072
+    "total_spesimen": 106136104,
+    "total_spesimen_negatif": 92339535
   },
   "update": {
     "penambahan": {
-      "jumlah_positif": 4858,
-      "jumlah_meninggal": 24,
-      "jumlah_sembuh": 5134,
-      "jumlah_dirawat": -300,
-      "tanggal": "2022-08-23",
-      "created": "2022-08-23 16:23:59"
+      "jumlah_positif": 5428,
+      "jumlah_meninggal": 18,
+      "jumlah_sembuh": 5550,
+      "jumlah_dirawat": -140,
+      "tanggal": "2022-08-24",
+      "created": "2022-08-24 16:30:45"
     },
     "harian": [
       {
@@ -25655,7 +25655,7 @@
       {
         "key_as_string": "2022-08-03T00:00:00.000Z",
         "key": 1659484800000,
-        "doc_count": 1,
+        "doc_count": 2,
         "jumlah_meninggal": {
           "value": 18
         },
@@ -26260,13 +26260,42 @@
         "jumlah_dirawat_kum": {
           "value": 48503
         }
+      },
+      {
+        "key_as_string": "2022-08-24T00:00:00.000Z",
+        "key": 1661299200000,
+        "doc_count": 1,
+        "jumlah_meninggal": {
+          "value": 18
+        },
+        "jumlah_sembuh": {
+          "value": 5550
+        },
+        "jumlah_positif": {
+          "value": 5428
+        },
+        "jumlah_dirawat": {
+          "value": -140
+        },
+        "jumlah_positif_kum": {
+          "value": 6329143
+        },
+        "jumlah_sembuh_kum": {
+          "value": 6123342
+        },
+        "jumlah_meninggal_kum": {
+          "value": 157438
+        },
+        "jumlah_dirawat_kum": {
+          "value": 48363
+        }
       }
     ],
     "total": {
-      "jumlah_positif": 6323715,
-      "jumlah_dirawat": 48503,
-      "jumlah_sembuh": 6117792,
-      "jumlah_meninggal": 157420
+      "jumlah_positif": 6329143,
+      "jumlah_dirawat": 48363,
+      "jumlah_sembuh": 6123342,
+      "jumlah_meninggal": 157438
     }
   }
 }
